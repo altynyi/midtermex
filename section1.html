@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Sections Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Fix the left section to the left side */
+    .fixed-left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #f8f9fa;
+      border-right: 1px solid #ddd;
+      padding-top: 20px;
+      z-index: 10;
+    }
+
+
+    /* Give some spacing to the main content */
+    .content {
+      margin-left: 220px;
+      margin-right: 20px;
+      padding: 20px;
+    }
+
+    /* Styling for the links in the fixed sections */
+    .fixed-left a
+    {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    /* Hover effect for the links */
+    .fixed-left a:hover
+    {
+      background-color: #007bff;
+      color: white;
+    }
+
+    /* Styling for the sections */
+    section {
+      padding: 40px;
+      margin-bottom: 40px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fixed-left">
+    <h4>Navigation</h4>
+    <a href="section1.html">Section 1</a>
+    <a href="section2.html">Section 2</a>
+    <a href="section3.html">Section 3</a>
+    <a href="section4.html">Section 4</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>This is the content of section 1. It can have any content, such as text, images, or videos.</p>
+    </section>
+    
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>This is the content of section 2. More content can be added here as needed.</p>
+    </section>
+    
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>This is the content of section 3. Add your content here.</p>
+    </section>
+    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
